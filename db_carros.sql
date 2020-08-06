@@ -2,7 +2,8 @@
 SQLyog Ultimate v12.09 (64 bit)
 MySQL - 10.4.10-MariaDB : Database - db_produto
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -22,6 +23,7 @@ CREATE TABLE `tbl_galeria_veiculo` (
   `nome_foto` varchar(255) DEFAULT NULL,
   `cod_veiculo` int(40) DEFAULT NULL,
   `situacao` int(11) NOT NULL,
+  `capa` enum('0','1') DEFAULT '0' NOT NULL
   PRIMARY KEY (`cod_foto`)
 ) ENGINE=InnoDB AUTO_INCREMENT=411 DEFAULT CHARSET=latin1;
 
